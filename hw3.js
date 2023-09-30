@@ -57,6 +57,22 @@ if(prices1 >= 1000 && prices2 <= 1900){
 // 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
 //     Результат виводити в консоль.
 
+
+var season = 2;
+
+if(season == 1){
+    console.log("Spring");
+}else if(season == 2){
+    console.log("Summer");
+}else if(season == 3){
+    console.log("Fall")
+}else if(season == 4){
+    console.log("Winter")
+}else{
+    console.log("Incorrect number of season")
+}
+
+
 // 5.  Задано 3 числа (a, b, c), які не рівні між собою.
 //     Визначити середнє мід цими трьома числами
 //     (не середнє арифметичне значення, а яке з трьох заданих чисел среднє за значенням) використовуючи оператор if-else.
