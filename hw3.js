@@ -95,6 +95,34 @@ if(a > b && a < c){
 //     За заданим номером вивести назву дня тижня використовуючи switch.
 //     Результат виводити в консоль.
 
+let dayOfTheWeekNumber = 7;
+switch(dayOfTheWeekNumber){
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    case 7:
+        console.log('Sunday');
+        break;
+    default:
+        console.log('incorrectly');
+        break;
+}
+
 // 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
