@@ -127,6 +127,35 @@ switch(dayOfTheWeekNumber){
 //     Математичні операції для обчислення: "+", "-", "*", "/".
 //     Результат виводити в консоль.
 
+
+let num1 = 10;
+let num2 = 20;
+let operator = "+";
+
+function calculate (num1, operator, num2){
+    switch (operator){
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+    if(num2 !==0){
+        return num1 / num2;
+    }else{
+        return "Error: division by zero ";
+    }default: 
+    return "Error: invalid operation";
+    }
+}
+
+const result = calculate(num1, operator, num2);
+console.log("Result: ", result);
+
+
+
+
 // 8. Використовуючи цикл for перемістити значення від 1 до 5 у масив myArray.
 
 // 9. Напишіть 2 цикли.
