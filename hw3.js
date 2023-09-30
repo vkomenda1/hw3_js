@@ -79,6 +79,18 @@ if(season == 1){
 //     Використати вкладені оператори if
 //     Результат виводити в консоль.
 
+let a = 60;
+let b = 30;
+let c = 90;
+
+if(a > b && a < c){
+        console.log("Average number: " + a);
+}else if(b < a && b < c ){
+    console.log("Average number: " + b);
+}else{
+    console.log("Average number: " + c);
+}
+
 // 6.  Задано номер дня тижня.
 //     За заданим номером вивести назву дня тижня використовуючи switch.
 //     Результат виводити в консоль.
