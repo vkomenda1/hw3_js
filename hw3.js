@@ -192,6 +192,14 @@ console.log(myArray);
 //     Використовуйте цикл for, щоб додати значення кожного елемента масиву myArr до підсумку.
 //     const myArr = [2, 3, 4, 5, 6];
 
+let total = 0;
+const myArr = [2, 3, 4, 5, 6];
+
+for(let i = 0; i < myArr.length; i++){
+    total += myArr[i];
+}
+console.log(total);
+
 // 11. Напишіть код, котрий виведе в консоль кожен піделемент в arr по одному.
 
 //     const arr = [ [1, 2], [3, 4], [5, 6] ];
