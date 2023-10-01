@@ -169,6 +169,25 @@ console.log(myArray);
 //    За допомогою першого передайте парні числа від 1 до 9 у myArray за допомогою циклу for.
 //    За допомогою другого передайте непарні числа від 1 до 9 у myArray за допомогою циклу for.
 
+myArray = [];
+
+for(let i = 1; i <= 9; i++){
+    if(i % 2 == 0){
+        myArray.push(i);
+    }
+}
+console.log(myArray);
+
+myArray = [];
+
+for(let i = 1; i <= 9; i ++){
+    if(i % 2 !== 0){
+        myArray.push(i);
+    }
+}
+console.log(myArray);
+
+
 // 10. Оголоcіть та ініціалізуйте змінну total = 0.
 //     Використовуйте цикл for, щоб додати значення кожного елемента масиву myArr до підсумку.
 //     const myArr = [2, 3, 4, 5, 6];
