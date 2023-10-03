@@ -12,7 +12,7 @@
     let hamburger = 3;
     let hamburgerWithPotation = 1;
 
-    if(hamburger <= 3 && hamburgerWithPotation <= 1){
+    if(hamburger >= 3 && hamburgerWithPotation >= 1){
         console.log("Ми поїли");
     }else{
         console.log("Ми йдемо в інше кафе");
