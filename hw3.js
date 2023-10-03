@@ -38,19 +38,18 @@ if(prices1 >= 1000 && prices2 <= 1900){
 //     Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
 //     Результат виводити в консоль.
 
-prices1 = 1000;
-prices2 = 1900;
+macbookPrice = 900;
 
-if(prices1 <= 1000 && prices2 >= 1900){
-    console.log("Діапазон цін не знаходиться від " + prices1 + " до " + prices2);
+if(macbookPrice < 1000 || macbookPrice > 1900){
+    console.log("Діапазон цін не знаходиться від 1000 до 1900");
 }else{
-    console.log("Діапазон цін знаходиться від " + prices1 + " до " + prices2);
+    console.log("Діапазон цін знаходиться від 1000 до 1900");
 }
 
-if(prices1 >= 1000 && prices2 <= 1900){
-    console.log(`Діапазон цін не знаходиться від ${!prices1} до ${!prices2}`);
-}else{
-    console.log(`Діапазон цін знаходиться від ${prices1} до ${prices2}`);
+if(!(macbookPrice >= 1000 && macbookPrice <= 1900)) {
+    console.log("Діапазон цін не знаходиться від 1000 до 1900")
+} else {
+    console.log("Діапазон цін знаходиться від 1000 до 1900");
 }
 
 
