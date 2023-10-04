@@ -276,15 +276,16 @@ console.log(vowels);
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-let meters = 1000;
+let meters = 10000;
 let kilometers = meters / 1000;
+
 
 if(meters == 1000){
     console.log(`${meters} метрів це ${kilometers} кілометр`);
 }else if(meters > 1000){
-    console.log("Введене значення більше 1000 метрів.");
+    console.log(`${meters} метрів це ${kilometers} кілометрів`);
 }else if(meters < 1000){
-    console.log("Введене значення менше 1000 метрів.");
+    console.log(`${meters} метра це ${kilometers} кілометра`);
 }else{
     console.log("Введене значення є некоректним.");
 }
