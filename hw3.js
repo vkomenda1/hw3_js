@@ -276,16 +276,35 @@ console.log(vowels);
 
 //     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 
-let meters = 10000;
-let kilometers = meters / 1000;
 
+const meters = 32; 
 
-if(meters == 1000){
-    console.log(`${meters} метрів це ${kilometers} кілометр`);
-}else if(meters > 1000){
-    console.log(`${meters} метрів це ${kilometers} кілометрів`);
-}else if(meters < 1000){
-    console.log(`${meters} метра це ${kilometers} кілометра`);
+const kilometers = meters / 1000; 
+let endingMeters = '';
+let endingKilometers = '';
+
+if (meters === 1) {
+    endingMeters = 'метр';
+} else if (meters >= 22 && meters <= 44 ) {
+    endingMeters = 'метри';
+} else if ((meters >= 5 && meters <= 9) || meters >= 10) {
+    endingMeters = 'метрів';
 }else{
-    console.log("Введене значення є некоректним.");
+    endingMeters = 'метра';
 }
+
+if (kilometers === 1) {
+    endingKilometers = 'кілометр';
+} else if (kilometers >= 22 && kilometers <= 44 ) {
+    endingKilometers = 'кілометри';
+} else if ((kilometers >= 5 && kilometers <= 9) || kilometers >= 10) {
+    endingKilometers = 'кілометрів';
+}else{
+    endingKilometers = 'кілометра';
+}
+
+console.log(`${meters} ${endingMeters} це ${kilometers} ${endingKilometers}`);
+
+
+
+
